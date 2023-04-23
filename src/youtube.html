@@ -6,24 +6,46 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="p-2 flex justify-between items-center bg-gray-800 h-16">
-      <div class="flex p-1 items-center font-bold text-white">
-        <div class="p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <div class="flex items-center justify-between h-16 p-2 bg-gray-800">
+      <div class="flex items-center p-1 text-lg font-bold text-white">
+        <button class="p-1 bg-gray-800 rounded-full hover:bg-gray-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu-2"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#9e9e9e"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <line x1="4" y1="6" x2="20" y2="6" />
             <line x1="4" y1="12" x2="20" y2="12" />
             <line x1="4" y1="18" x2="20" y2="18" />
           </svg>
-        </div>
+        </button>
         <div class="p-1">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-youtube"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ff2825"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <rect x="3" y="5" width="18" height="14" rx="4" />
             <path d="M10 9l5 3l-5 3z" />
           </svg>
         </div>
-        YouTube
+        <span>YouTube</span>
       </div>
       <div class="flex items-center">
         <input
@@ -31,7 +53,9 @@
           type="search"
           placeholder="Buscar"
         />
-        <div class="flex items-center pl-4 pr-6 text-white bg-gray-700 border border-l-0 border-gray-500 rounded-r-full h-9">
+        <div
+          class="flex items-center pl-4 pr-6 text-white bg-gray-700 border border-l-0 border-gray-500 rounded-r-full h-9"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -47,18 +71,953 @@
             />
           </svg>
         </div>
+        <button class="p-2 ml-2 bg-gray-700 rounded-full hover:bg-gray-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-microphone"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="9" y="2" width="6" height="11" rx="3" />
+            <path d="M5 10a7 7 0 0 0 14 0" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+        </button>
       </div>
-        <div class="border border-gray-600 rounded-l-full rounded-r-full h-9 p-3 flex items-center font-bold"> 
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <div class="flex items-center">
+        <button class="mr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-dots-vertical"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="1" />
+            <circle cx="12" cy="19" r="1" />
+            <circle cx="12" cy="5" r="1" />
+          </svg>
+        </button>
+        <button
+          class="flex items-center p-3 font-bold bg-gray-800 border border-gray-600 rounded-l-full rounded-r-full h-9 hover:bg-sky-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-user-circle"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <circle cx="12" cy="12" r="9" />
             <circle cx="12" cy="10" r="3" />
-            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+            <path
+              d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+            />
           </svg>
-          <div class="text-sky-400 px-1">
-            Acceder
+          <div class="px-1 text-sky-400">Acceder</div>
+        </button>
+      </div>
+    </div>
+    <div class="flex">
+      <!--Parte Derecha-->
+      <div class="grid w-1/5 text-white bg-gray-800">
+        <!--Menu lateral-->
+        <div class="grid grid-cols-1 pt-2 pr-10 justify-items-start">
+          <button
+            class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-700 hover:bg-slate-600 focus:bg-slate-600 active:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-home"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="5 12 3 12 12 3 21 12 19 12" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+            </svg>
+            <div class="ml-5">Principal</div>
+          </button>
+          <button
+            class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bolt"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+            </svg>
+            <div class="ml-5">Shorts</div>
+          </button>
+          <button
+            class="flex items-center py-2 pl-2 pr-10 mb-2 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-box"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+              <line x1="12" y1="12" x2="20" y2="7.5" />
+              <line x1="12" y1="12" x2="12" y2="21" />
+              <line x1="12" y1="12" x2="4" y2="7.5" />
+            </svg>
+            <div class="ml-5">Suscripciones</div>
+          </button>
+        </div>
+        <div class="mr-4 border"></div>
+        <div class="grid grid-cols-1 pr-16 mt-2 justify-items-start">
+          <!--Otra Caja-->
+          <button
+            class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-box-multiple"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="7" y="3" width="14" height="14" rx="2" />
+              <path
+                d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2"
+              />
+            </svg>
+            <div class="ml-5">Biblioteca</div>
+          </button>
+          <button
+            class="flex items-center py-2 pl-2 pr-10 mb-2 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-history"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="12 8 12 12 14 14" />
+              <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+            </svg>
+            <div class="ml-5">Historial</div>
+          </button>
+        </div>
+        <div class="mr-4 border"></div>
+        <div class="grid grid-cols-1 justify-items-start">
+          <!--Caja Suscribete-->
+          <p class="pt-3 pl-5 pr-10">
+            Accede para dar “Me gusta” a los videos, realizar comentarios y
+            suscribirte.
+          </p>
+          <button
+            class="flex items-center p-3 mt-3 mb-3 ml-5 font-bold bg-gray-800 border border-gray-600 rounded-l-full rounded-r-full h-9 hover:bg-sky-900"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-user-circle"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#00abfb"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="10" r="3" />
+              <path
+                d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+              />
+            </svg>
+            <div class="px-1 text-sky-400">Acceder</div>
+          </button>
+        </div>
+        <div class="mr-4 border"></div>
+        <div>
+          <p class="mt-2 ml-4 text-lg">Explorar</p>
+          <div class="grid grid-cols-1 pr-16 mt-2 justify-items-start">
+            <!--Otra Caja-->
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-flame"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"
+                />
+              </svg>
+              <div class="ml-5">Tendencias</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-tiktok"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+              </svg>
+              <div class="ml-5">Musica</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-access-point"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="12" y1="12" x2="12" y2="12.01" />
+                <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+                <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+                <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+                <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+              </svg>
+              <div class="ml-5">En Directo</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-device-gamepad"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+                <path d="M6 12h4m-2 -2v4" />
+                <line x1="15" y1="11" x2="15" y2="11.01" />
+                <line x1="18" y1="13" x2="18" y2="13.01" />
+              </svg>
+              <div class="ml-5">Videojuegos</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-news"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"
+                />
+                <line x1="8" y1="8" x2="12" y2="8" />
+                <line x1="8" y1="12" x2="12" y2="12" />
+                <line x1="8" y1="16" x2="12" y2="16" />
+              </svg>
+              <div class="ml-5">Noticias</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-glass"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="15" x2="12" y2="21" />
+                <path
+                  d="M17 3l1 7c0 3.012 -2.686 5 -6 5s-6 -1.988 -6 -5l1 -7h10z"
+                />
+              </svg>
+              <div class="ml-5">Deportes</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 mb-2 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-bulb-off"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+                />
+                <line x1="9.7" y1="17" x2="14.3" y2="17" />
+              </svg>
+              <div class="ml-5">Aprendizaje</div>
+            </button>
+          </div>
+          <div class="mr-4 border"></div>
+          <div class="grid grid-cols-1 pr-16 mt-2 justify-items-start">
+            <!--Otra Caja-->
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-settings"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"
+                />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <div class="ml-5">Configuración</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-flag"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="5" x2="5" y2="21" />
+                <line x1="19" y1="5" x2="19" y2="14" />
+                <path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0" />
+                <path d="M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0" />
+              </svg>
+              <div class="ml-5">Denuncias</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-help"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="9" />
+                <line x1="12" y1="17" x2="12" y2="17.01" />
+                <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+              </svg>
+              <div class="ml-5">Ayuda</div>
+            </button>
+            <button
+              class="flex items-center py-2 pl-2 pr-10 mb-2 ml-2 rounded-lg bg-slate-800 hover:bg-slate-700"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-message-report"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"
+                />
+                <line x1="12" y1="8" x2="12" y2="11" />
+                <line x1="12" y1="14" x2="12" y2="14.01" />
+              </svg>
+              <div class="ml-5">Sugerencias</div>
+            </button>
+          </div>
+          <div class="mr-4 border"></div>
+          <div class="pt-3 pl-5 pr-10 text-xs">
+            <p>Información Prensa</p>
+            <p>Derechos de autor Contactar</p>
+            <p>Creadores Publicidad</p>
+            <p>Desarrolladores</p>
+            <p class="mt-3">Términos Privacidad</p>
+            <p>Política y seguridad</p>
+            <p>Cómo funciona YouTube</p>
+            <p>Probar funciones nuevas</p>
+            <p class="my-3 text-slate-500">&copy; 2023 Google LLC</p>
           </div>
         </div>
+      </div>
+      <div class="flex flex-col w-4/5 bg-slate-800">
+        <!--Caja Videos-->
+        <div class="bg-slate-800">
+          <!--Menu Categorias-->
+          <div class="flex items-center mt-2">
+            <!--Otra Caja-->
+            <button
+              class="px-3 py-1 ml-3 bg-gray-200 rounded-lg text-blak hover:bg-white"
+            >
+              <div>Todos</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Mixes</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">En tiempo Real</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Pop Latino</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Karol G</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Desafío</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-2 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Baladas Romanticas</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Salsa</div>
+            </button>
+            <button
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg bg-slate-700 hover:bg-slate-600"
+            >
+              <div class="">Álbumes</div>
+            </button>
+            <div
+              class="px-3 py-1 ml-3 text-gray-200 rounded-lg -2 bg-slate-700 hover:bg-slate-600"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-chevron-right"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <polyline points="9 6 15 12 9 18" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-5 mx-3 text-white bg-slate-800">
+          <!--Videos-->
+          <div class="mt-10">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/v9WSjE3tIkg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdO36abD9YUe058Y0CyajmdjoGSA"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/ytc/AGIKgqPCyU7sSAwA5ZUpVl0Gd_8YjjgIeh_t0uvwrLUeoA=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  ¡Los TikToks Más Vistos del Mundo!
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">Beast Reacts</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>51 M de visualizaciones · hace 1 año</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10">
+            <!--Manda el fuego-->
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/OFK_DJ_qYBI/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAfs8VkaBm3308SsUR4oe5TM2FzAw"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/KKbyW9bagqZM8CRHPuZ8x9VczMnzQKwH1L7d1TLoy-5fnc9gk4H_ONNsUmQWlJbRxsH5pzGODw=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Generación 12 Kids - Manda el fuego
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">Generación 12 Kids</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>3,7 M de visualizaciones · hace 7 años</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/vusp-xMzOfk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKyhCI8-3T7Xfv2H_p-XxYIRNofQ"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/kMDc8fyf3CWH_QnICe0TRVMzVfbwTm7L8ylqUwU-w5W14TckEcxFPHOAuvMNBQnVKTIJCyy4=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Kristen Cruz Surprises The Judges With Her Unbelievable
+                  Voice...
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">America's Got Talent</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>20 M de visualizaciones · hace 10 meses</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/IONRKCecivQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxW6B6f6O967X59DDXYRXYcX2GUA"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/Js_Ip-lezgP0XmjUzTLsHPUN9HVBn1vMeYnx12ApUPVfSPSIBiZ2OEAMlXM86USsGv38PsCnfQ=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  KAROL G, Shakira - TQG (Official Video)
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">KAROL G</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>442 M de visualizaciones · hace 1 mes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/cLmCJKT5ssw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAtbKN9gLzlRyjvYjUskuQX0d50pw"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div class="">
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/Lp9cu-xgKL0QYxdJ268CaZ63SrmODmZT2uRJjwPHvoeLOvd1LLNJWUd45tYR_VW9z5APPIPJpw=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Jack Black Performs His Legendary Sax-A-Boom with The Roots
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">The Tonight Show Starring Jimmy Fallon</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>91 M de visualizaciones · hace 4 años</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/JwghZEmvmb8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCafLMFb-ckT-8EvsO4jhGG01pDGQ"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div class="">
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/ytc/AGIKgqOReI-pXnWr34_58U6HibDhh_Co8KrPrtHKQvujGg=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Cómo cambia tu cerebro al hablar varios idiomas | BBC Mundo
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">BBC News Mundo</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>2,1 M de visualizaciones · hace 2 años</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/TLh_6G7i4_w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDqCDptHhpn8rIrtuZgowQ0Fjjrxw"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/e6MSYBYMhAblq2tflgxLUBYR9PI_2oZXOqCOq3qlwOcvUyHcpRByyQ7_hRQ1L4kMONBF26aQXmg=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Análisis Matemático para Pensar, por Lic. María Inés
+                  Baragatti...
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">El Traductor de Ingeniería</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>1,4 M de visualizaciones · hace 10 meses</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/icmijgetrJg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBWGuoibYPpQ4Ox1DeIJ0St3N-uOg"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="https://yt3.googleusercontent.com/ytc/AGIKgqML6m2RxjudiLOT8MtOaxV-Vt1mOqVKjEUaI9vw6Q=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  Xtreme Kids | "Jesús Mi Fiel Amigo" | Brilla En Mí (Álbum)
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">Xtreme Kids</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>3 M de visualizaciones · hace 10 años</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <img
+              class="rounded-lg"
+              src="https://i.ytimg.com/vi/QhVaR5IVxmA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHH10HcNgG1vYR5X8SwbUKo8Nf4Q"
+              alt=""
+            />
+            <div class="grid grid-flow-col pt-2">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqMfekFzX2k5BeB1637TDzzx4yBj0jb2AAbyXFDoFOI=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+              <div class="flex flex-col ml-2 text-sm text-gray-400">
+                <p class="text-base font-bold text-white">
+                  ASMR MUKBANG | Triple Cheeseburger, Spicy Noodles...
+                </p>
+                <div class="flex items-center">
+                  <p class="mr-1">Zach Choi ASMR</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-check"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    stroke-width="3"
+                    stroke="#9CA3AF"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9 12l2 2l4 -4" />
+                  </svg>
+                </div>
+                <p>3,5 M de visualizaciones · hace 3 meses</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
